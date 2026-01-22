@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Interface</title>
+
+  <style>
+    body{
+
+      padding: 25px;
+      background-color: white;
+      color: black;
+      font-size: 25px;
+    }
+
+    .dark-mode{
+      background-color: black;
+      color: white;
+    }
+  </style>
+
+</head>
+<body class="dark-mode">
+
+  <button onclick="myFunction()">
+    Click Me
+  </button>
+
+  <div id="myDiv">Hello</div>
+
+  <script >
+
+    function myFunction() {
+      const x = document.getElementById("myDiv");
+
+      if (x.innerHTML === "Hello") {
+        x.innerHTML = "Swapped text!";
+      } else{
+        x.innerHTML ="Hello"
+      }
+    }
+  </script>
+  
+</body>
+</html>
